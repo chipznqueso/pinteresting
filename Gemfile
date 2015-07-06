@@ -19,10 +19,11 @@ end
 group :production do
 	gem 'pg'
 	gem 'rails_12factor'
-gem 'sdoc', '~> 0.4.0',          
+end 
 
-group: :doc
-
+group :doc do 
+gem 'sdoc', '~> 0.4.0', require: false          
+end 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
